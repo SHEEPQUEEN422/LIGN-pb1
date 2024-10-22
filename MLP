@@ -1,0 +1,11 @@
+class MLP(nn,Module):
+    def _init_(self,input_dim,hidden_dims,output_dim=1):
+        for hidden_dim in hidden_dims:
+            self.hidden_layers.append(nn.Linear(prev_dim,hidden_dim))
+            prev_dim=hidden_dim
+
+self.output_layer=nn.Linear(prev_dim,output_dim)
+def forward(self,x):
+    for layer in self.hidden_layers:
+        x=layer(x)
+        x=torch.relu(x)
