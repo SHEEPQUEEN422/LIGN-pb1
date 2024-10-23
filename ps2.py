@@ -165,10 +165,16 @@ def alt_gradient_descent(dataset, num_epochs=10, learning_rate=0.01, batch_size=
     return model
 
 # PROBLEM 10
-# Free Response Answer Here: 
+$$
+\mathbf{w}(t+1) = \mathbf{w}(t) - \eta \cdot \frac{1}{m} \sum_{j=1}^{m} \nabla L(\mathbf{w}(t) \mid B_j)
+$$
 
 # PROBLEM 11
-# Free Response Answer Here: 
+$$
+\mathbf{w}(t+1) = \mathbf{w}(t) - \eta \cdot \sum_{i=1}^{t} \sum_{j=1}^{m} \nabla L(\mathbf{w}(i) \mid B_j)
+$$
 
 # PROBLEM 12
-# Free Response Answer Here: 
+$$
+\text{alt\_gradient\_descent\_3B} \quad \text{with arguments:} \quad (dataset, \, num\_epochs, \, learning\_rate = lr, \, batch\_size = k)
+$$
